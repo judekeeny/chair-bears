@@ -1,0 +1,151 @@
+Last login: Wed Sep 16 15:03:32 on ttys001
+judekeeny@iMac ~ % hdiutil create -size 5g -fs APFS -encrypted -volname "Vault" ~/Desktop/jude/"red box"/Vault.sparseimage
+
+hdiutil: create: unknown option "-encrypted"
+Usage:	hdiutil create <sizespec> [options] <imagepath>
+	hdiutil create -help
+judekeeny@iMac ~ % chmod +x ~/Desktop/jude/red\ box/vault.sh
+
+judekeeny@iMac ~ % chmod +x ~/Desktop/jude/red\ box/lock.sh
+
+judekeeny@iMac ~ % chmod +x ~/Desktop/jude/red\ box/vault.sh
+
+judekeeny@iMac ~ % mkdir -p "$HOME/Desktop/jude/red box" "$HOME/Desktop/jude/secret vault"
+
+judekeeny@iMac ~ % ls -d "$HOME/Desktop/"*jude* 2>/dev/null || ls -d "$HOME/"*jude* 2>/dev/null
+
+/Users/judekeeny/Desktop/jude
+judekeeny@iMac ~ % # CONFIGURATION
+VAULT_IMAGE="$HOME/Desktop/jude/secret vault/vault.sparseimage"
+MOUNT_POINT="/Volumes/SecretVault"
+WEBPAGE_FILE="$HOME/Desktop/jude/red box/interface.html"
+
+zsh: command not found: #
+judekeeny@iMac ~ % 
+  [Restored Sep 16, 2026 at 7:33:17 PM]
+Last login: Wed Sep 16 19:27:12 on ttys000
+judekeeny@iMac ~ % hdiutil create -size 10g -fs APFS -encryption AES-256 -volname "SecretVault" "$HOME/Desktop/jude/secret vault/vault.sparseimage"
+
+Enter a new password to secure "vault.sparseimage": 
+Re-enter new password: 
+created: /Users/judekeeny/Desktop/jude/secret vault/vault.sparseimage
+judekeeny@iMac ~ % mkdir -p "$HOME/Desktop/jude/secret vault"
+
+judekeeny@iMac ~ % hdiutil create -size 5g -fs APFS -encryption AES-256 -volname "SecretVault" "$HOME/Desktop/jude/secret vault/vault.sparseimage"
+
+hdiutil: create failed - File exists
+judekeeny@iMac ~ % hdiutil attach "$HOME/Desktop/jude/secret vault/vault.sparseimage"
+
+Enter password to access "vault.sparseimage": 
+/dev/disk5          	GUID_partition_scheme          	
+/dev/disk5s1        	EFI                            	
+/dev/disk5s2        	Apple_APFS                     	
+/dev/disk6          	EF57347C-0000-11AA-AA11-0030654	
+/dev/disk6s1        	41504653-0000-11AA-AA11-0030654	/Volumes/SecretVault
+judekeeny@iMac ~ % 
+judekeeny@iMac ~ % 
+  [Restored Sep 16, 2026 at 7:45:39 PM]
+Last login: Wed Sep 16 19:45:09 on console
+judekeeny@iMac ~ % 
+  [Restored Sep 17, 2026 at 8:36:41 AM]
+Last login: Wed Sep 16 19:45:39 on ttys000
+judekeeny@iMac ~ % security delete-generic-password -l "vault.sparseimage"
+
+keychain: "/Users/judekeeny/Library/Keychains/login.keychain-db"
+version: 512
+class: "genp"
+attributes:
+    0x00000007 <blob>="vault.sparseimage"
+    0x00000008 <blob>=<NULL>
+    "acct"<blob>="244812F8-B8A8-461C-A30A-337FD6A6875D"
+    "cdat"<timedate>=0x32303236303931363233343230375A00  "20260916234207Z\000"
+    "crtr"<uint32>=<NULL>
+    "cusi"<sint32>=<NULL>
+    "desc"<blob>="disk image password"
+    "gena"<blob>=<NULL>
+    "icmt"<blob>=<NULL>
+    "invi"<sint32>=<NULL>
+    "mdat"<timedate>=0x32303236303931363233343230375A00  "20260916234207Z\000"
+    "nega"<sint32>=<NULL>
+    "prot"<blob>=<NULL>
+    "scrp"<sint32>=<NULL>
+    "svce"<blob>="vault.sparseimage"
+    "type"<uint32>=<NULL>
+password has been deleted.
+judekeeny@iMac ~ % 
+  [Restored Sep 17, 2026 at 8:42:24 AM]
+Last login: Thu Sep 17 08:36:41 on ttys000
+judekeeny@iMac ~ % 
+  [Restored Sep 17, 2026 at 10:57:47 AM]
+Last login: Thu Sep 17 10:57:41 on ttys004
+judekeeny@iMac ~ % nano correct_pages.sh
+
+
+  UW PICO 5.09                                         File: correct_pages.sh                                           
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+^G Get Help         ^O WriteOut         ^R Read File        ^Y Prev Pg          ^K Cut Text         ^C Cur Pos          
+^X Exit             ^J Justify          ^W Where is         ^V Next Pg          ^U UnCut Text       ^T To Spell        
+  [Restored Sep 17, 2026 at 11:02:25 AM]
+Last login: Thu Sep 17 11:01:54 on ttys000
+judekeeny@iMac ~ % chmod +x correct_pages.sh
+
+chmod: correct_pages.sh: No such file or directory
+judekeeny@iMac ~ % 
+  [Restored Sep 17, 2026 at 11:02:33 AM]
+Last login: Thu Sep 17 11:02:25 on ttys000
+Restored session: Thu Sep 17 11:02:32 EDT 2026
+judekeeny@iMac ~ % ./correct_pages.sh
+
+zsh: no such file or directory: ./correct_pages.sh
+judekeeny@iMac ~ % 
+  [Restored Sep 17, 2026 at 11:04:01 AM]
+Last login: Thu Sep 17 11:02:33 on ttys000
+judekeeny@iMac ~ % 
+  [Restored Sep 17, 2026 at 11:29:52 AM]
+Last login: Thu Sep 17 11:07:56 on ttys000
+judekeeny@iMac ~ % 
+  [Restored Sep 17, 2026 at 2:33:15 PM]
+Last login: Thu Sep 17 11:34:31 on ttys000
+judekeeny@iMac ~ % rm -f "$HOME/Desktop/jude/red box/"*.html
+
+judekeeny@iMac ~ % 
+  [Restored Sep 18, 2026 at 2:53:01 PM]
+Last login: Fri Sep 18 14:40:59 on console
+judekeeny@iMac ~ % cd /Volumes/Darwin/AdODIS-installer.app/Contents/MacOS
+
+cd: no such file or directory: /Volumes/Darwin/AdODIS-installer.app/Contents/MacOS
+judekeeny@iMac ~ % sudo ./installbuilder.sh
+
+Password:
+judekeeny is not in the sudoers file.
+This incident has been reported to the administrator.
+judekeeny@iMac ~ % 
+  [Restored Sep 22, 2026 at 2:02:26 PM]
+Last login: Tue Sep 22 08:55:32 on console
+judekeeny@iMac ~ % 
